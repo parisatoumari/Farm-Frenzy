@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b31faf3-6ca1-4843-a678-d73f785e1543" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1tGEQt7rpw84zv8tpflvxoI4ikj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HW3_Q1" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="FrenzyFarm3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FrenzyFarm3" />
+      <module name="untitled7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FrenzyFarm3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b31faf3-6ca1-4843-a678-d73f785e1543" name="Default Changelist" comment="" />
+      <created>1622387015552</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622387015552</updated>
+      <workItem from="1622387017584" duration="2081000" />
+      <workItem from="1622915893310" duration="11362000" />
+      <workItem from="1622956588804" duration="26770000" />
+      <workItem from="1622999236539" duration="2403000" />
+      <workItem from="1623002068856" duration="557000" />
+      <workItem from="1623840159027" duration="12496000" />
+      <workItem from="1623861431372" duration="7963000" />
+      <workItem from="1623899903510" duration="6109000" />
+      <workItem from="1623947238066" duration="792000" />
+      <workItem from="1624082010575" duration="8103000" />
+      <workItem from="1624019258568" duration="1307000" />
+      <workItem from="1624020795748" duration="3355000" />
+      <workItem from="1624081263006" duration="4908000" />
+      <workItem from="1624097289268" duration="1857000" />
+      <workItem from="1624167649051" duration="823000" />
+      <workItem from="1624168511517" duration="824000" />
+      <workItem from="1624174240819" duration="6231000" />
+      <workItem from="1624188250527" duration="110000" />
+      <workItem from="1624197196151" duration="983000" />
+      <workItem from="1624288937169" duration="187000" />
+      <workItem from="1625043961325" duration="15131000" />
+      <workItem from="1625113021138" duration="5950000" />
+      <workItem from="1625124568007" duration="5864000" />
+      <workItem from="1625138025371" duration="7895000" />
+      <workItem from="1625199754618" duration="6982000" />
+      <workItem from="1625287149878" duration="19996000" />
+      <workItem from="1625316209363" duration="1256000" />
+      <workItem from="1625324178781" duration="10424000" />
+      <workItem from="1625374672035" duration="25900000" />
+      <workItem from="1625493666417" duration="7067000" />
+      <workItem from="1625505767627" duration="6440000" />
+      <workItem from="1625571170688" duration="14840000" />
+      <workItem from="1625641812191" duration="1909000" />
+      <workItem from="1625646796704" duration="627000" />
+      <workItem from="1625656495869" duration="597000" />
+      <workItem from="1625720718167" duration="4329000" />
+      <workItem from="1625740018048" duration="617000" />
+      <workItem from="1625848950627" duration="4959000" />
+      <workItem from="1625921013986" duration="11657000" />
+      <workItem from="1625981098728" duration="10836000" />
+      <workItem from="1626012670639" duration="18426000" />
+      <workItem from="1626000044326" duration="388000" />
+      <workItem from="1626000488249" duration="1902000" />
+      <workItem from="1626277764963" duration="1184000" />
+      <workItem from="1626280140378" duration="2762000" />
+      <workItem from="1626286873881" duration="66000" />
+      <workItem from="1626346965250" duration="10197000" />
+      <workItem from="1626374213363" duration="2502000" />
+      <workItem from="1626415933643" duration="12087000" />
+      <workItem from="1626431912663" duration="2728000" />
+      <workItem from="1626504080219" duration="4048000" />
+      <workItem from="1626508255434" duration="530000" />
+      <workItem from="1626508805122" duration="399000" />
+      <workItem from="1626523791280" duration="2596000" />
+      <workItem from="1626526442478" duration="3814000" />
+      <workItem from="1626611047577" duration="374000" />
+      <workItem from="1626632721397" duration="7278000" />
+      <workItem from="1626667069561" duration="5158000" />
+      <workItem from="1626683492185" duration="2266000" />
+      <workItem from="1626696308689" duration="8379000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FarmFrenzy3$FrenzyFarm3.ic" NAME="FrenzyFarm3 Coverage Results" MODIFIED="1625991738646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

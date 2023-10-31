@@ -1,0 +1,55 @@
+import javax.swing.*;import java.awt.*;import java.awt.event.MouseEvent;import java.awt.event.MouseListener;import java.util.ArrayList;
+public class Truck extends JPanel implements MouseListener { Manager manager;ArrayList<String> truck = new ArrayList<>();public Truck(Manager manager) { this.manager = manager;w = new InputProcessor(manager); }InputProcessor w;
+    @Override public void paintComponent(Graphics graphics) { super.paintComponent(graphics);Graphics2D graphics2D = (Graphics2D) graphics;this.addMouseListener(this);
+        graphics2D.drawImage(new ImageIcon("src\\images\\bb.png").getImage(), 0, 0, 1300, 700, null);
+        graphics2D.drawImage(new ImageIcon("src\\images\\MH.png").getImage(), 900, 0, 400, 300, null);
+        graphics2D.drawImage(new ImageIcon("src\\images\\bbb.png").getImage(), 0, 0, 300, 100, null);
+        for (int i = 0; i < w.manager.reservoir.getEgg(); i++) { graphics2D.drawImage(new ImageIcon("src\\images\\Egg.png").getImage(), 0, 100 + (i + 1) * 50, 50, 50, null); }
+        for (int i = 0; i < w.manager.reservoir.getIn_milk(); i++) { graphics2D.drawImage(new ImageIcon("src\\images\\InMilk.png").getImage(), 50, 100 + (i + 1) * 50, 20, 50, null); }
+        for (int i = 0; i < w.manager.reservoir.getFeather(); i++) { graphics2D.drawImage(new ImageIcon("src\\images\\Feather.png").getImage(), 100, 100 + (i + 1) * 50, 50, 50, null); }
+        for (int i = 0; i < w.manager.reservoir.getCloth(); i++) { graphics2D.drawImage(new ImageIcon("src\\images\\string.png").getImage(), 150, 100 + (i + 1) * 50, 50, 50, null); }
+        for (int i = 0; i < w.manager.reservoir.getOut_milk(); i++) { graphics2D.drawImage(new ImageIcon("src\\images\\OutMilk.png").getImage(), 200, 100 + (i + 1) * 50, 20, 50, null); }
+        for (int i = 0; i < w.manager.reservoir.getPowder(); i++) { graphics2D.drawImage(new ImageIcon("src\\images\\Powder2.png").getImage(), 250, 100 + (i + 1) * 50, 50, 50, null); }
+        for (int i = 0; i < w.manager.reservoir.getBread(); i++) { graphics2D.drawImage(new ImageIcon("src\\images\\bf.png").getImage(), 300, 100 + (i + 1) * 50, 50, 50, null); }
+        for (int i = 0; i < w.manager.reservoir.getDress(); i++) { graphics2D.drawImage(new ImageIcon("src\\images\\producedress.png").getImage(), 350, 100 + (i + 1) * 50, 50, 50, null); }
+        for (int i = 0; i < w.manager.reservoir.getIceCream(); i++) { graphics2D.drawImage(new ImageIcon("src\\images\\Icecream.png").getImage(), 400, 100 + (i + 1) * 50, 50, 50, null); }
+        for (int i = 0; i < w.manager.reservoir.getMeet(); i++) { graphics2D.drawImage(new ImageIcon("src\\images\\Meat.png").getImage(),450,100 + (i+1) * 50,50,30,null); }
+        int index = -10;for (int i = 0; i < truck.size(); i++) {
+            if (truck.get(i).equalsIgnoreCase("egg")) { index+=5;graphics2D.drawImage(new ImageIcon("src\\images\\Egg.png").getImage(), (900 + (i + 1) * 10) + index, 10, 50, 50, null);index+=10; }
+            if (truck.get(i).equalsIgnoreCase("inmilk")) { index += 20;graphics2D.drawImage(new ImageIcon("src\\images\\InMilk.png").getImage(), (900 + (i + 1) * 10) + index, 10, 20, 50, null);index+=10; }
+            if (truck.get(i).equalsIgnoreCase("powder")) { index+=10;graphics2D.drawImage(new ImageIcon("src\\images\\Powder2.png").getImage(), (900 + (i + 1) * 10) + index, 10, 50, 50, null);index += 10; }
+            if (truck.get(i).equalsIgnoreCase("feather")) { graphics2D.drawImage(new ImageIcon("src\\images\\Feather.png").getImage(), (900 + (i + 1) * 10) + index, 10, 50, 50, null);index += 10; }
+            if (truck.get(i).equalsIgnoreCase("bread")) { index+=10;graphics2D.drawImage(new ImageIcon("src\\images\\bf.png").getImage(), (900 + (i + 1) * 10) + index, 10, 50, 50, null);index += 10; }
+            if(truck.get(i).equalsIgnoreCase("outmilk")){ index+=20;graphics2D.drawImage(new ImageIcon("src\\images\\OutMilk.png").getImage(), (900 + (i + 1) * 10) + index, 10, 20, 50, null); }
+            if(truck.get(i).equalsIgnoreCase("cloth")){ index+=10;graphics2D.drawImage(new ImageIcon("src\\images\\stringmaker.png").getImage(), (900 + (i + 1) * 10) + index, 10, 50, 50, null);index+=10; }
+            if(truck.get(i).equalsIgnoreCase("dress")){ index+=10;graphics2D.drawImage(new ImageIcon("src\\images\\producedress.png").getImage(), (900 + (i + 1) * 10) + index, 10, 50, 50, null);index+=10; }
+            if(truck.get(i).equalsIgnoreCase("meat")){ index+=10;graphics2D.drawImage(new ImageIcon("src\\images\\Meat.png").getImage(),(900 + (i + 1) * 10) + index,20,50,30,null);index+=10; }
+            if(truck.get(i).equalsIgnoreCase("icecream")){ index+=10;graphics2D.drawImage(new ImageIcon("src\\images\\IceCream.png").getImage(),(900 + (i + 1) * 10) + index,10,50,50,null);index+=10; }
+        }
+    }
+    @Override public void mouseClicked(MouseEvent e) { int c1=0;int c2=0;int c3=0;int c4=0;int c5=0;int c6=0;int c7=0;int c8=0;int c9=0;int c10=0;
+        if (e.getX() > 0 && e.getX() < 300 && e.getY() > 0 && e.getY() < 100) { InputProcessor.a = true;InputProcessor.jFrame2.setVisible(false);InputProcessor.jFrame2.dispose();w.Start();this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return; }
+        if(e.getX() > 900 && e.getX() < 1300 && e.getY() > 0 && e.getY() < 300){ w.manager.TruckGo(w.manager.mainAccount);w.VehicleTimeChecking();
+            for (int i = 0; i < truck.size(); i++) {
+                if(truck.get(i).equalsIgnoreCase("egg") || truck.get(i).equalsIgnoreCase("inmilk") || truck.get(i).equalsIgnoreCase("feather")){ w.manager.vehicle.Sum--; }
+                if(truck.get(i).equalsIgnoreCase("powder") || truck.get(i).equalsIgnoreCase("outmilk") || truck.get(i).equalsIgnoreCase("cloth")){ w.manager.vehicle.Sum-=2; }
+                if(truck.get(i).equalsIgnoreCase("dress") || truck.get(i).equalsIgnoreCase("icecreame") || truck.get(i).equalsIgnoreCase("bread")){ w.manager.vehicle.Sum-=4; }
+                if(truck.get(i).equalsIgnoreCase("meat")){ w.manager.vehicle.Sum-=15; }
+            }truck.clear();c1=0;c2=0;c3=0;c4=0;c5=0;c6=0;c7=0;c8=0;c9=0;c10=0;this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return;
+        }
+        for (int i = 0; i < w.manager.reservoir.getEgg(); i++) { if (e.getX() >= 15 && e.getX() <= 25 && e.getY() <= 900 && e.getY() >= 100) { if (w.manager.vehicle.Sum + 1 <= 15) { w.manager.TruckLoad("Egg");truck.add("egg");this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return; }else if(w.manager.vehicle.Sum + 1 > 15 && c1==0){ ShowAlert("you dont have enough space in your truck!");c1++; } }}
+        for (int i = 0; i < w.manager.reservoir.getIn_milk(); i++) { if (e.getX() >= 50 && e.getX() <= 75 && e.getY() <= 900 && e.getY() >= 100) { if (w.manager.vehicle.Sum + 1 <= 15) { w.manager.TruckLoad("InMilk");truck.add("inmilk");this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return; }else if(w.manager.vehicle.Sum + 1 > 15 && c2==0){ ShowAlert("you dont have enough space in your truck!");c2++; } } }
+        for (int i = 0; i < w.manager.reservoir.getPowder(); i++) { if (e.getX() >= 250 && e.getX() <= 300 && e.getY() <= 900 && e.getY() >= 100) { if (w.manager.vehicle.Sum + 2 <= 15) { w.manager.TruckLoad("Powder");truck.add("powder");this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return; }else if(w.manager.vehicle.Sum + 2 > 15 && c3==0){ ShowAlert("you dont have enough space in your truck!");c3++; } } }
+        for (int i = 0; i < w.manager.reservoir.getFeather(); i++) { if (e.getX() >= 100 && e.getX() <= 150 && e.getY() <= 900 && e.getY() >= 100) { if (w.manager.vehicle.Sum + 1 <= 15) { w.manager.TruckLoad("Feather");truck.add("feather");this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return; }else if(w.manager.vehicle.Sum + 1 > 15 && c4==0){ ShowAlert("you dont have enough space in your truck!");c4++; } } }
+        for (int i = 0; i < w.manager.reservoir.getBread(); i++) { if (e.getX() >= 300 && e.getX() <= 350 && e.getY() <= 900 && e.getY() >= 100) { if (w.manager.vehicle.Sum + 4 <= 15) { w.manager.TruckLoad("Bread");truck.add("bread");this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return; }else if(w.manager.vehicle.Sum + 4 > 15 && c5==0){ ShowAlert("you dont have enough space in your truck!");c5++; } } }
+        for (int i = 0; i < w.manager.reservoir.getOut_milk(); i++) {if (e.getX() >= 200 && e.getX() <= 230 && e.getY() <= 900 && e.getY() >= 100) { if (w.manager.vehicle.Sum + 2 <= 15) { w.manager.TruckLoad("OutMilk");truck.add("OutMilk");this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return; }else if(w.manager.vehicle.Sum + 2 > 15 && c6==0){ ShowAlert("you dont have enough space in your truck!");c6++; } } }
+        for (int i = 0; i < w.manager.reservoir.getCloth(); i++) { if (e.getX() >= 150 && e.getX() <= 200 && e.getY() <= 900 && e.getY() >= 100) { if (w.manager.vehicle.Sum + 2 <= 15) { w.manager.TruckLoad("Cloth");truck.add("Cloth");this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return; }else if(w.manager.vehicle.Sum + 2 > 15 && c7==0){ ShowAlert("you dont have enough space in your truck!");c7++; } } }
+        for (int i = 0; i < w.manager.reservoir.getDress(); i++) { if (e.getX() >= 350 && e.getX() <= 400 && e.getY() <= 900 && e.getY() >= 100) {if (w.manager.vehicle.Sum + 4 <= 15) { w.manager.TruckLoad("Dress");truck.add("dress");this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return; }else if(w.manager.vehicle.Sum + 4 > 15 && c8==0){ ShowAlert("you dont have enough space in your truck!");c8++; } } }
+        for (int i = 0; i < w.manager.reservoir.getIceCream(); i++) { if (e.getX() >= 400 && e.getX() <= 450 && e.getY() <= 900 && e.getY() >= 100) { if (w.manager.vehicle.Sum + 4 <= 15) { w.manager.TruckLoad("IceCream");truck.add("icecream");this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return; }else if(w.manager.vehicle.Sum + 4 > 15 && c9==0){ ShowAlert("you dont have enough space in your truck!");c9++; } } }
+        for (int i = 0; i < w.manager.reservoir.getMeet(); i++) { if (e.getX() >= 450 && e.getX() <= 500 && e.getY() <= 900 && e.getY() >= 100) { if (w.manager.vehicle.Sum + 15 <= 15) { w.manager.TruckLoad("Meat");truck.add("meat");this.removeMouseListener(this);this.invalidate();this.validate();this.repaint();return; }else if(w.manager.vehicle.Sum + 15 > 15 && c10==0){ ShowAlert("you dont have enough space in your truck!");c10++; } } }
+    }
+    public void ShowAlert(String Alert) {
+        JOptionPane.showMessageDialog(null, Alert);
+    }
+    @Override public void mousePressed(MouseEvent e) { }@Override public void mouseReleased(MouseEvent e) { }@Override public void mouseEntered(MouseEvent e) { }@Override public void mouseExited(MouseEvent e) { }
+}
